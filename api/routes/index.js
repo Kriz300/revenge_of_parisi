@@ -1,11 +1,9 @@
 const router = require("express").Router();
 
-const register = require("./register");
-const find = require("./find");
-const upload = require("./upload");
+const save = require("./save");
+const load = require("./load");
 
-router.use("/register", register);
-router.use("/find", find);
-router.use("/upload", upload);
+router.use("/save", save);
+router.use("/load", load);
 
 module.exports = router;
